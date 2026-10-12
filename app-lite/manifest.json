@@ -1,0 +1,10 @@
+{
+  "name": "小元教培",
+  "appid": "",
+  "description": "教培管理系统 校区端 / 家校端 示例",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "vueVersion": "3",
+  "mp-weixin": { "appid": "", "setting": { "urlCheck": false } },
+  "h5": { "router": { "mode": "hash" } }
+}

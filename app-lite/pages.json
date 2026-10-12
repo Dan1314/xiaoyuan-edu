@@ -1,0 +1,18 @@
+{
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "工作台" } },
+    { "path": "pages/schedule/index", "style": { "navigationBarTitleText": "今日课表" } },
+    { "path": "pages/students/index", "style": { "navigationBarTitleText": "学员" } },
+    { "path": "pages/parent/home/index", "style": { "navigationBarTitleText": "家校首页" } },
+    { "path": "pages/parent/homework/index", "style": { "navigationBarTitleText": "作业与点评" } }
+  ],
+  "tabBar": {
+    "list": [
+      { "pagePath": "pages/index/index", "text": "工作台" },
+      { "pagePath": "pages/schedule/index", "text": "课表" },
+      { "pagePath": "pages/students/index", "text": "学员" },
+      { "pagePath": "pages/parent/home/index", "text": "家校" }
+    ]
+  },
+  "globalStyle": { "navigationBarBackgroundColor": "#ffffff", "navigationBarTextStyle": "black" }
+}
