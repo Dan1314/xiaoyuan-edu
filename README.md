@@ -2,12 +2,19 @@
 
 # 小元教培管理系统 · 教培机构 SaaS / 校区管理 / 家校互动
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Vue 3](https://img.shields.io/badge/Admin-Vue%203%20%2B%20Ant%20Design%20Vue-42b883)
+![uni-app](https://img.shields.io/badge/App-uni--app%20(Vue%203)-2B9939)
+![Status](https://img.shields.io/badge/开源-精简骨架%20%2B%20Mock-blue)
+
+简体中文 | [English](README.en.md)
+
 **小元教培** 是一套面向培训机构的 **教培管理系统（教务管理系统）**：总部管理后台 + 校区管理后台 + 校区 App + 家校小程序/App，
 覆盖 **招生 CRM、收费报名、排课点名、课消统计、家校互动、多校区管理、经营报表** 全流程。
 
 > 🛠️ **提供定制化需求开发** — 可按机构业务流程定制教务/财务/家校功能、管理后台报表与第三方系统对接。
 
-[核心功能](#-核心功能) · [截图](#-产品截图) · [系统架构](#-系统架构) · [同类产品](#-同类产品--替代方案) · [商务合作](#-商务合作--联系我们) · [English](#english)
+[核心功能](#-核心功能) · [截图](#-产品截图) · [系统架构](#-系统架构) · [同类产品](#-同类产品--替代方案) · [商务合作](#-商务合作--联系我们) · [常见问题](#-常见问题-faq) · [English](README.en.md)
 
 </div>
 
@@ -115,6 +122,26 @@ flowchart TB
 
 > 以上产品名称及商标归各自权利人所有，仅用于说明产品类别，本项目与其不存在任何关联、合作或背书关系。
 
+## ❓ 常见问题 FAQ
+
+**Q：本仓库是完整的教培管理系统吗？**
+不是。仓库公开的是可运行的 **精简骨架**：`admin-lite/` 校区管理后台演示，`app-lite/` 校区端 + 家校端 uni-app 示例，均使用 Mock 数据。完整服务端与正式业务实现不在本仓库中。
+
+**Q：admin-lite 有哪些页面？**
+经营概览、招生线索（意向学员）、学员管理、排课课表、订单（收费报名）、多校区管理六个页面。
+
+**Q：app-lite 能编译成哪些端？**
+基于 uni-app（Vue 3），提供 `dev:h5`、`dev:mp-weixin`、`build:h5`、`build:app` 脚本，可预览 H5、微信小程序（需填写自己的 AppID），并构建 App。
+
+**Q：接口地址如何配置？**
+admin-lite 通过 `VITE_API_BASE_URL`，app-lite 通过 `config/index.js`，默认均为占位 `https://api.example.com`。
+
+**Q：支持定制开发或私有化部署吗？**
+支持，见下方「商务合作」。
+
+**Q：如何参与贡献？**
+请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，版本变更见 [CHANGELOG.md](CHANGELOG.md)，文档索引见 [docs/README.md](docs/README.md)。
+
 ## 🤝 商务合作 / 联系我们
 
 **提供定制化需求开发**：支持按机构业务定制教务/财务/家校功能、报表与权限、私有化部署、第三方系统（支付、公众号、考勤硬件、直播等）对接。
@@ -160,9 +187,7 @@ cd app-lite && npm install && npm run dev:h5  # 或 npm run dev:mp-weixin
 
 ## English
 
-**Xiaoyuan Edu (小元教培)** is a management system for training schools and education institutions in China: HQ admin console, campus admin console, campus mobile app and parent mini-program/app. Features include lead CRM & trial lessons, enrollment & payments, class scheduling, attendance & lesson consumption, parent–school communication, multi-campus management and business reports. It can be evaluated as an alternative to products in the same category (e.g. Xiaobao, Xiaomai Zhujiao, Xiaoguanjia, Yizhiniao); all trademarks belong to their respective owners.
-
-**Custom development available** — we can tailor features, reports and integrations to your institution.
+English documentation: [README.en.md](README.en.md)
 
 ## License
 
